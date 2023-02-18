@@ -1,5 +1,16 @@
+@import "/node_modules/react-grid-layout/css/styles.css";
+@import "/node_modules/react-resizable/css/styles.css";
+
 .App {
   text-align: center;
+  display: flex;
+  position: relative;
+  height: 1600px;
+  background-color: lightgray;
+}
+
+.App::-webkit-scrollbar {
+  display: none;
 }
 
 .App-logo {
@@ -15,7 +26,7 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,4 +46,144 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.section {
+  border: #61dafb 2px;
+  width: 30%;
+  background-color: antiquewhite;
+  position: relative;
+  /* height: 100vh; */
+
+}
+
+.section_div{
+  position: absolute;
+  top: 70px;
+  left: 50px;
+}
+
+.menu {
+  background-color: whitesmoke;
+  margin: 10px 60px 10px 60px;
+  padding: 10px 10px 10px 10px;
+}
+
+.display {
+  width: 69%;
+  background-color: lightgray;
+  position: relative;
+  /* display: flex; */
+  /* height: 100vh;  */
+ 
+}
+
+.item {
+  background-color: whitesmoke;
+  margin: 10px 90px 10px 90px;
+  padding: 10px 10px 10px 10px;
+}
+
+.header {
+  margin: 8px 0px 0px 8px;
+  /* background-color: white; */
+  text-align: left;
+  height: 50px;
+  width: 100% ;
+
+}
+
+
+
+.square {
+  width: 300px;
+  height: 300px;
+  border: 1px solid ;
+  margin: 0px 20px 20px 30px;
+}
+
+.Square {
+  /* float: "left"; */
+    margin: "5px 15px 5px 15px";
+    width: 150px;
+    height: 100px;
+}
+
+.imgitems {
+  /* display: inline-flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; */
+
+}
+
+.close-button {
+  margin-left: 20px;
+}
+
+
+
+
+
+
+.title {
+    text-align: "center";
+    /* margin-left: 200px; */
+}
+
+.button {
+  align-content: right;
+  margin-bottom: 2px ;
+  margin-right: 5px;
+}
+
+.close {
+  text-align: right;
+}
+
+.show-button {
+  height: 50px;
+  width: 100px;
+  position: fixed;
+  right: 140px;
+  top: 10px;
+  z-index: 1;
+}
+
+.overview {
+  border: 1px solid black;
+  margin: 0px 130px 20px 130px;
+  padding: 20px 0px 20px 0px;
+}
+
+.display-section {
+  width: 65%;
+  /* display: flex;
+  flex-wrap: nowrap; */
+}
+
+.gulab-jamun {
+  width: 480px;
+  height: 105px;
+}
+
+.chole-bhature {
+  width: 150px;
+  height: 270px;
+}
+
+.rajma-chawal {
+  width: 150px;
+  height: 270px;
+}
+
+.rabri {
+  width: 330px;
+  height:270px;
+}
+
+.butter-naan {
+  width: 480px;
+  height:270px;
 }
